@@ -1,0 +1,71 @@
+/* Ensure the entire viewport is used */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Outer wrapper fills full screen */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  background-color: #ffffff;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Display the percentage above the canvas */
+.loading-percentage {
+  margin-top: 1.5rem;
+  font-size: 1.125rem; /* text-lg */
+  color: #4b5563; /* text-gray-700 */
+  font-weight: 500;
+  text-align: center;   
+}
+
+/* Canvas container styles */
+.loading-canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Canvas itself */
+.loading-canvas {
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Text below canvas */
+.loading-text {
+  margin-top: 1.5rem;
+  font-size: 1.125rem; /* text-lg */
+  color: #4b5563; /* text-gray-700 */
+  font-weight: 500;
+  text-align: center;   
+}
+
+/* Restart button styling */
+.loading-restart-button {
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.loading-restart-button:hover {
+  background-color: #333333;
+}
